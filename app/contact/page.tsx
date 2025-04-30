@@ -261,89 +261,68 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Get Involved */}
-      <section className="bg-white py-16 md:py-24">
-        <div className="container mx-auto px-4 md:px-6">
-          <AnimatedSection>
-            <div className="mx-auto mb-12 max-w-3xl text-center">
-              <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl gradient-text">
-                Ways to Get Involved
-              </h2>
-              <p className="text-lg text-gray-600">
-                There are many ways to support our mission and make a difference in the lives of young people.
-              </p>
-            </div>
-          </AnimatedSection>
+     {/* Get Involved Section */}
+<section className="bg-white py-16 md:py-24">
+  <div className="container mx-auto px-4 md:px-6">
+    <AnimatedSection>
+      <div className="mx-auto mb-12 max-w-3xl text-center">
+        <h2 className="mb-4 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl gradient-text">
+          Ways to Get Involved
+        </h2>
+        <p className="text-lg text-gray-600">
+          Help us shape the future. Whether you're volunteering or partnering with us, your involvement drives real impact.
+        </p>
+      </div>
+    </AnimatedSection>
 
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <AnimatedSection className="stagger-1">
-              <Card className="animated-card border-t-4 border-primary">
-                <CardHeader>
-                  <CardTitle className="text-primary">Volunteer</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-gray-600">
-                    Share your time and talents with our youth. We have various volunteer opportunities available, from
-                    mentoring to event support.
-                  </p>
-                  <Button
-                    asChild
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 transform hover:scale-[1.02]"
-                  >
-                    <Link href="/contact" className="flex items-center justify-center">
-                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
+    <div className="grid gap-8 sm:grid-cols-2">
+      {/* Volunteer Card */}
+      <AnimatedSection className="stagger-1">
+        <Card className="animated-card border-t-4 border-primary shadow-md hover:shadow-lg transition-shadow duration-300">
+          <CardHeader>
+            <CardTitle className="text-primary">Volunteer</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-4 text-gray-600">
+              Share your time and talents with our youth. From mentoring to event support, every action counts.
+            </p>
+            <Button
+              asChild
+              className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 transform hover:scale-[1.02]"
+            >
+              <Link href="/contact" className="flex items-center justify-center">
+                Become a Volunteer <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </CardContent>
+        </Card>
+      </AnimatedSection>
 
-            <AnimatedSection className="stagger-2">
-              <Card className="animated-card border-t-4 border-secondary">
-                <CardHeader>
-                  <CardTitle className="text-secondary">Donate</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-gray-600">
-                    Your financial support helps us expand our programs and reach more youth. Every donation, no matter
-                    the size, makes a difference.
-                  </p>
-                  <Button
-                    asChild
-                    className="w-full bg-gradient-to-r from-secondary to-primary hover:from-secondary/90 hover:to-primary/90 transition-all duration-300 transform hover:scale-[1.02]"
-                  >
-                    <Link href="/donate" className="flex items-center justify-center">
-                      Donate Now <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
+      {/* Partner With Us Card */}
+      <AnimatedSection className="stagger-2">
+        <Card className="animated-card border-t-4 border-primary shadow-md hover:shadow-lg transition-shadow duration-300">
+          <CardHeader>
+            <CardTitle className="text-primary">Partner With Us</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="mb-4 text-gray-600">
+              We work with schools, businesses, and community groups. Let’s collaborate to empower the next generation.
+            </p>
+            <Button
+              asChild
+              className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 transform hover:scale-[1.02]"
+            >
+              <Link href="/contact" className="flex items-center justify-center">
+                Start a Partnership <ArrowRight className="ml-2 h-4 w-4" />
+              </Link>
+            </Button>
+          </CardContent>
+        </Card>
+      </AnimatedSection>
+    </div>
+  </div>
+</section>
 
-            <AnimatedSection className="stagger-3">
-              <Card className="animated-card border-t-4 border-primary">
-                <CardHeader>
-                  <CardTitle className="text-primary">Partner With Us</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="mb-4 text-gray-600">
-                    We collaborate with schools, businesses, and community organizations to maximize our impact. Let's
-                    work together to support youth development.
-                  </p>
-                  <Button
-                    asChild
-                    className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 transition-all duration-300 transform hover:scale-[1.02]"
-                  >
-                    <Link href="/contact" className="flex items-center justify-center">
-                      Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="bg-gradient-to-r from-primary to-secondary py-16 text-white md:py-24">
