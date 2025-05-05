@@ -6,6 +6,15 @@ import { Brain, BookOpen, Compass, Users, Award, Lightbulb } from "lucide-react"
 // Add ScrollToTop component
 import ScrollToTop from "@/components/scroll-to-top"
 
+export const metadata = {
+  title: "Programs | Solve Side Academy",
+  description:
+    "Explore our comprehensive programs including youth development, educational motivation, career guidance, leadership training, boy child development, and team building activities.",
+  alternates: {
+    canonical: "/programs",
+  },
+}
+
 export default function Programs() {
   return (
     <>

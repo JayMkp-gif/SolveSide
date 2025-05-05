@@ -81,23 +81,13 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="/team"
-                  className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center"
-                >
-                  <span className="mr-2">›</span> Our Team
-                </Link>
-              </li>
-              <li>
-                <Link
                   href="/contact"
                   className="text-gray-400 hover:text-white transition-colors duration-200 flex items-center"
                 >
                   <span className="mr-2">›</span> Contact Us
                 </Link>
               </li>
-              <li>
-
-              </li>
+              <li></li>
             </ul>
           </div>
 

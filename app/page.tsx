@@ -22,6 +22,15 @@ import AnimatedSection from "@/components/animated-section"
 import AnimatedCounter from "@/components/animated-counter"
 import GradientButton from "@/components/gradient-button"
 
+export const metadata = {
+  title: "Solve Side Academy | Empowering Youth for a Brighter Future",
+  description:
+    "Solve Side Academy offers youth development programs, educational motivation, career guidance, and leadership training to help young people reach their full potential.",
+  alternates: {
+    canonical: "/",
+  },
+}
+
 export default function Home() {
   return (
     <>
@@ -384,38 +393,38 @@ export default function Home() {
         </section>
       </AnimatedSection>
 
-     {/* CTA Section with Contact Us only */}
-<section className="bg-gradient-to-r from-primary to-secondary py-16 text-white md:py-24 relative overflow-hidden">
-  {/* Background decorative elements */}
-  <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
-    <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-white"></div>
-    <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-white"></div>
-    <div className="absolute top-1/2 left-1/3 w-20 h-20 rounded-full bg-white"></div>
-  </div>
-
-  <div className="container mx-auto px-4 md:px-6 relative z-10">
-    <AnimatedSection>
-      <div className="mx-auto max-w-3xl text-center">
-        <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Join Us in Making a Difference</h2>
-        <p className="mb-8 text-lg text-white/90">
-          Whether you're interested in volunteering, enrolling in our programs, or collaborating, we’d love to hear from you.
-        </p>
-        <div className="flex justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="bg-transparent border-2 border-white text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-          >
-            <Link href="/contact" className="flex items-center">
-              Contact Us <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
+      {/* CTA Section with Contact Us only */}
+      <section className="bg-gradient-to-r from-primary to-secondary py-16 text-white md:py-24 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
+          <div className="absolute top-10 left-10 w-40 h-40 rounded-full bg-white"></div>
+          <div className="absolute bottom-10 right-10 w-60 h-60 rounded-full bg-white"></div>
+          <div className="absolute top-1/2 left-1/3 w-20 h-20 rounded-full bg-white"></div>
         </div>
-      </div>
-    </AnimatedSection>
-  </div>
-</section>
 
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <AnimatedSection>
+            <div className="mx-auto max-w-3xl text-center">
+              <h2 className="mb-4 text-3xl font-bold tracking-tight sm:text-4xl">Join Us in Making a Difference</h2>
+              <p className="mb-8 text-lg text-white/90">
+                Whether you're interested in volunteering, enrolling in our programs, or collaborating, we’d love to
+                hear from you.
+              </p>
+              <div className="flex justify-center">
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-transparent border-2 border-white text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+                >
+                  <Link href="/contact" className="flex items-center">
+                    Contact Us <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </AnimatedSection>
+        </div>
+      </section>
 
       <ScrollToTop />
     </>
